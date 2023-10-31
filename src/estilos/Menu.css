@@ -1,0 +1,55 @@
+/* menuStyles.css */
+
+/* Estilos para el menú principal */
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 15px;
+  }
+  
+  /* Estilos para los enlaces del menú */
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Estilo para el botón de inicio de sesión */
+  .login-button {
+    background-color: #ffcc00;
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #ffdd33;
+  }
+  

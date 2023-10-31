@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../estilos/LoginForm.css';
 
 function LoginForm() {
   const [username, setUsername] = useState('');
@@ -48,7 +49,7 @@ function LoginForm() {
   }
 
   return (
-    <div>
+    <div className="login-box">
       <h2>Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
         <div>
