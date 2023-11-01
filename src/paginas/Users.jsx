@@ -6,6 +6,7 @@ import { checkIfUserIsLogged } from "../services/checkIfIsLogged";
 import UsersForm from "../components/UsersForm";
 import Modal from "../components/Modal";
 import { getUserLogged } from "../services/getUserLogged";
+import "../estilos/presentacion.css";
 
 function Users() {
 
@@ -46,7 +47,7 @@ function Users() {
     <div>
       {(!showModalCreate && !showModalUpdate) && (
         <>
-        <button onClick={toggleModalCreate}>Registrar nuevo usuario</button>
+        <button className="" onClick={toggleModalCreate}>Registrar nuevo usuario</button>
         <div>
           <h2>LISTAR USUARIOS</h2>
         </div><table>
