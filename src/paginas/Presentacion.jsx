@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../estilos/presentacion.css";
 
 const Presentacion = () => {
-  useEffect(() => {
-    // Aquí puedes agregar cualquier lógica adicional necesaria
-  }, []);
 
   return (
     

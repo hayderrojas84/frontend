@@ -1,0 +1,17 @@
+.users-form-container {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.users-form-container table {
+  width: 100%;
+}
+
+.users-form-container table tr {
+  text-align: center;
+}
+
+.users-form-container table td input {
+  width: 80%;
+}

@@ -1,10 +1,12 @@
 import React from "react";
-import Menu from "./paginas/Menu";
+import NavBar from "./components/NavBar";
 
 const Layout = ({ children }) => {
+
   return (
     <div>
-      <Menu/>
+      <NavBar />
+      <div id="modal-root"></div>
       <div className="content">{children}</div>
     </div>
     
