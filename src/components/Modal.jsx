@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import '../estilos/Modal.css';
+
 
 const Modal = ({ children, onClose }) => {
   return ReactDOM.createPortal(

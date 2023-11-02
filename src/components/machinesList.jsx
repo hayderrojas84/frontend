@@ -1,6 +1,7 @@
 import { API_URL } from '../consts';
 import axios from '../utils/axios';
 
+
 function MachinesList ({ machines, setMachines }) {
   const handleDeleteMachine = (machineId) => {
     axios

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { API_URL } from '../consts';
 import axios from '../utils/axios.js';
+import "../estilos/ExercisesForm.css"; // Import the CSS file
 
 function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal = null, exerciseToEdit = null }) {
   const [exercise, setExercise] = useState({

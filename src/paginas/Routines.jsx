@@ -5,6 +5,9 @@ import { API_URL } from "../consts";
 import Modal from "../components/Modal";
 import RoutinesForm from "../components/RoutinesForm";
 import ExercisesForm from "../components/ExercisesForm";
+import "../estilos/RoutinesPage.css"; // Import the CSS file
+
+
 
 function RoutinesPage () {
 
@@ -14,7 +17,6 @@ function RoutinesPage () {
     const [showModalExercise, setShowModalExercise] = useState(false);
     const [rowToEdit, setRowToEdit] = useState(null);
     const [operation, setOperation] = useState('Agregar');
-
 
 
     useEffect(() => {
@@ -139,11 +141,15 @@ function RoutinesPage () {
                 
             ) : (
                 <div className="routines-info">
-                    <p>No hay rutinas para mostrar...</p>
+                    <p>No hay rutinas para mostrar</p>
                 </div>
             )}
 
-            {(!showModalExercise) && (<button onClick={() => toggleModalExercise(null, null)}>Registrar nuevo ejercicio</button>)}
+
+            
+
+
+<div className="Buttonregistro"> {(!showModalExercise) && (<button onClick={() => toggleModalExercise(null, null)}>Registrar nuevo ejercicio</button>)}</div>
             {exercises.length ? (
                 <div className="exercises-info exercises-table">
                     <table>
@@ -219,7 +225,7 @@ function RoutinesPage () {
                 </div>
             ) : (
                 <div className="exercises-info">
-                    <p>No hay Ejercicios para mostrar...</p>
+                    <p>No hay ejercicios para mostrar</p>
                 </div>
             )}
                 </>
@@ -240,5 +246,7 @@ function RoutinesPage () {
         </>
     )
 }
+
+
 
 export default RoutinesPage;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { API_URL } from '../consts';
 import axios from '../utils/axios.js';
+import "../estilos/RoutinesForm.css"; // Import the CSS file
 
 function RoutinesForm({ setRoutines = null, operation = 'Agregar', toggleModal = null, routineToEdit = null }) {
   const [routine, setRoutine] = useState({

@@ -1,10 +1,5 @@
 .presentacion-container {
-    background-image: url('https://img.freepik.com/fotos-premium/centro-gimnasio-fitness-impecable-contemporaneo-interior-generativo-ai_391052-10889.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    color: #f5f3f3;
     text-align: center;
     padding: 100px;
     height: 65vh;
