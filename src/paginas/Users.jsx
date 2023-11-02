@@ -6,7 +6,6 @@ import { checkIfUserIsLogged } from "../services/checkIfIsLogged";
 import UsersForm from "../components/UsersForm";
 import Modal from "../components/Modal";
 import { getUserLogged } from "../services/getUserLogged";
-import "../estilos/presentacion.css";
 
 function Users() {
 
@@ -47,7 +46,7 @@ function Users() {
     <div>
       {(!showModalCreate && !showModalUpdate) && (
         <>
-        <button className="" onClick={toggleModalCreate}>Registrar nuevo usuario</button>
+        <button onClick={toggleModalCreate}>Registrar nuevo usuario</button>
         <div>
           <h2>LISTAR USUARIOS</h2>
         </div><table>
@@ -124,7 +123,7 @@ function Users() {
                     )}
                     <td>
                         <button onClick={() => toggleModalUpdate(user)} disabled={userLogged && userLogged.id === user.id}>Editar</button>
-                        <button onClick={toggleDelete} disabled={userLogged && userLogged.id === user.id}>Eliminar</button>
+                        <button onClick={() => toggleDelete(user.id)} disabled={userLogged && userLogged.id === user.id}>Eliminar</button>
                         
                       
                       

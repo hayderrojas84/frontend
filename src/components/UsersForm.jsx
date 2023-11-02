@@ -136,7 +136,9 @@ function UsersForm({ setUsers = null, operation = 'Agregar', toggleModal = null,
                   placeholder="Nombre de usuario"
                   onChange={handleInputChange}
                   required={from === 'login'}
+                  disabled={operation !== 'Agregar'}
                   value={user.username}
+                  autoComplete='off'
                 />
               </td>
               <td>
@@ -146,6 +148,7 @@ function UsersForm({ setUsers = null, operation = 'Agregar', toggleModal = null,
                   placeholder="Contraseña"
                   onChange={handleInputChange}
                   required={from === 'login'}
+                  autoComplete='off'
                 />
               </td>
             </tr>
@@ -168,6 +171,7 @@ function UsersForm({ setUsers = null, operation = 'Agregar', toggleModal = null,
                   placeholder="Identificación"
                   onChange={handleInputChange}
                   required
+                  disabled={operation !== 'Agregar'}
                   value={people.identification}
                 />
               </td>

@@ -12,6 +12,7 @@ const NavBar = () => {
   // Verifica si el usuario ha iniciado sesión
   const handleLogout = () => {
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
     setLogged(false);
     navigate('/');
   }

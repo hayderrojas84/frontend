@@ -65,3 +65,10 @@
     opacity: 1;
   }
 }
+
+.user-main {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
