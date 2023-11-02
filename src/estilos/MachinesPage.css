@@ -26,14 +26,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(252, 245, 245, 0.5); /* Fondo semitransparente */
     z-index: 999;
   }
   
   .modal-content {
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(243, 241, 241, 0.2);
     border-radius: 5px;
     display: flex;
     flex-direction: column;

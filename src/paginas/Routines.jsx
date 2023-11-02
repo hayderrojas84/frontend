@@ -11,6 +11,7 @@ import "../estilos/RoutinesPage.css"; // Import the CSS file
 
 function RoutinesPage () {
 
+
     const [routines, setRoutines] = useState([]);
     const [exercises, setExercises] = useState([]);
     const [showModalRoutine, setShowModalRoutine] = useState(false);
@@ -73,16 +74,23 @@ function RoutinesPage () {
             .catch((e) => console.error(e));
     }
 
-    
+
 
     return (
+
         <>
+
+        <br/><br/><br/>
         <div className="container-routines-page">
             {(!showModalRoutine && ! showModalExercise) && (
                 <>
-                {!showModalRoutine && (<button onClick={() => {toggleModalRoutine(null, null)}}>Registrar nueva rutina</button>)}
+                
+               
+<div className="Buttonregistro">{!showModalRoutine && (<button onClick={() => {toggleModalRoutine(null, null)}}>Registrar nueva rutina</button>)}</div> 
             {routines.length ? (
+
                 <div className="routines-info routines-table">
+                    <br/>
                     <table>
                         <thead>
                             <tr>
@@ -148,15 +156,17 @@ function RoutinesPage () {
 
             
 
+<br/><br/><br/>
 
-<div className="Buttonregistro"> {(!showModalExercise) && (<button onClick={() => toggleModalExercise(null, null)}>Registrar nuevo ejercicio</button>)}</div>
+<div className="Buttonregistro">{(!showModalExercise) && (<button onClick={() => toggleModalExercise(null, null)}>Registrar nuevo ejercicio</button>)}</div>
             {exercises.length ? (
                 <div className="exercises-info exercises-table">
+                    <br/>
                     <table>
                         <thead>
-                            <tr>
-                                <th colSpan={5}>Ejercicios</th>
-                            </tr>
+
+                                <th colSpan={7}>Ejercicios</th>
+
                             <tr>
                                 <th>
                                     ID
