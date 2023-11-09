@@ -41,7 +41,6 @@ function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal
   };
 
   const handleSelectChange = (e) => {
-    if (exerciseToEdit?.machines.length) exerciseToEdit.machines = [];
     const selectedOptions = Array.from(e.target.selectedOptions, (option) => option.value);
     if (selectedOptions) setSelectedMachines((sel) => {
       if (!sel.includes(selectedOptions[0])) return [...sel, ...selectedOptions] 
@@ -113,6 +112,7 @@ function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal
           <tbody>
             <tr>
               <td>
+                <label htmlFor="name">Nombre del ejercicio:</label>
                 <input
                   type="text"
                   name="name"
@@ -123,6 +123,7 @@ function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal
                 />
               </td>
               <td>
+                <label htmlFor="muscleGroup">Grupo muscular del ejercicio:</label>
                   <input
                   type="text"
                   name="muscleGroup"
@@ -135,6 +136,7 @@ function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal
             </tr>
             <tr>
                 <td>
+                  <label htmlFor="description">Descripción del ejercicio</label>
                   <textarea
                     type="text"
                     name="description"
@@ -144,7 +146,9 @@ function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal
                   />
                 </td>
                 <td>
-                  <select multiple={true} onChange={handleSelectChange} name="machines" id="machines_id" disabled={!machines.length}>
+                <label htmlFor="machines">Seleccionar Máquinas:</label>
+                  <select onChange={handleSelectChange} name="machines" id="machines_id" disabled={!machines.length}>
+                  <option value="">SELECCIONE</option>
                     {machines.length && (
                       machines.map((machine) => {
                         return (
@@ -159,6 +163,7 @@ function ExercisesForm({ setExercises = null, operation = 'Agregar', toggleModal
             </tr>
             <tr>
               <td colSpan={2}>
+                <label htmlFor="image">Imagen:</label>
               {(exerciseToEdit?.image) && (
                   <>
                     <small>Actual:</small>

@@ -1,0 +1,50 @@
+.client-container {
+    text-align: right;
+    margin-right: 20px; /* Add desired margin for alignment */
+  }
+  
+.client-data {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  border-radius: 5px;
+  background-color: rgb(152, 155, 156);
+}
+
+.client-main {
+  margin-right: 15px;
+  border-right: 1px solid #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 15px 0 15px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vh;
+
+}
+
+.client-main img{
+  width: 200px;
+}
+
+.client-info {
+  font-size: 20px;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-info p {
+  padding: 0;
+  margin: 0 15px;
+}
+
+.routineSchedules-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

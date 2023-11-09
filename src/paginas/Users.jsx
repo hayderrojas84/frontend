@@ -100,7 +100,7 @@ function Users() {
                           {user.people.lastnames}
                         </td>
                         <td>
-                          {user.people.birthdate}
+                          {user.people.birthdate ? Math.floor(((new Date()-(new Date(user.people.birthdate)))/31557600000)):<></>}
                         </td>
                         <td>
                           {user.people.email}

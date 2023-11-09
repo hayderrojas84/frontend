@@ -94,7 +94,7 @@ function RoutinesPage () {
                     <table>
                         <thead>
                             <tr>
-                                <th colSpan={6}>Rutinas</th>
+                                <th colSpan={7}>Rutinas</th>
                             </tr>
                             <tr>
                                 <th>
@@ -111,6 +111,9 @@ function RoutinesPage () {
                                 </th>
                                 <th>
                                     Objetivo
+                                </th>
+                                <th>
+                                    Ejercicios
                                 </th>
                                 <th>
                                     Acciones
@@ -135,6 +138,14 @@ function RoutinesPage () {
                                         </td>
                                         <td>
                                             {routine.goal}
+                                        </td>
+                                        <td>
+                                            {routine.exercises.length ? (
+                                                routine.exercises.map(exercise=>exercise.name).join(", ")
+
+                                            ): (
+                                                <>No hay ejercicios</> 
+                                            )}
                                         </td>
                                         <td>
                                             <button onClick={() => toggleModalRoutine(routine, 'Editar')}>Editar</button>
@@ -165,8 +176,7 @@ function RoutinesPage () {
                     <table>
                         <thead>
 
-                                <th colSpan={7}>Ejercicios</th>
-
+                              <tr><th colSpan={7}>Ejercicios</th></tr>  
                             <tr>
                                 <th>
                                     ID
