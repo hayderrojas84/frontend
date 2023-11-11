@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { checkIfUserIsLogged } from '../services/checkIfIsLogged'
 import "../estilos/Menu.css"; // Importa los estilos del menú
+import { getUserLogged } from "../services/getUserLogged";
 
 const NavBar = () => {
 
   const [logged, setLogged] = useState(checkIfUserIsLogged());
+  const user = getUserLogged();
 
   const navigate = useNavigate();
 
@@ -46,9 +48,10 @@ const NavBar = () => {
       </ul>
       <ul>
         {logged ?  (
-        <li>
-          <button onClick={handleLogout} className="logout-button">Cerrar Sesión</button>
-        </li>
+          <li>
+            <span>@{user.username} </span>
+            <button onClick={handleLogout} className="logout-button">Cerrar Sesión</button>
+          </li>
        ) : (
         <li>
           <Link to="/auth/login" className="login-button">Iniciar Sesión</Link>

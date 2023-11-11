@@ -28,6 +28,12 @@
 
 .client-main img{
   width: 200px;
+  padding-bottom: 15px;
+}
+
+.client-main p {
+  padding: 0;
+  margin: 0;
 }
 
 .client-info {

@@ -8,6 +8,7 @@ import Users from "./paginas/Users";
 import UserCreation from "./paginas/UserCreation";
 import Client from "./paginas/Client";
 import RoutinesPage from "./paginas/Routines";
+import Transactions from "./paginas/Transactions";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/users/create" element={<UserCreation />} />
           <Route path="/client/:identification" element={<Client />} />
           <Route path="/routines" element={<RoutinesPage />} />
+          <Route path="/transactions/:identification" element={<Transactions />} />
         </Routes>
       </BrowserRouter>
     </div>

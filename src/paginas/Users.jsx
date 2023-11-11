@@ -15,6 +15,9 @@ function Users() {
   const [showModalCreate, setShowModalCreate] = useState(false);
   const [showModalUpdate, setShowModalUpdate] = useState(false);
 
+  const navigate = useNavigate();
+
+
   const toggleDelete = (id) => {
     axios.delete(`${API_URL}/users/${id}/delete/`)
       .then((_res) => setUsers((lastUsers) => lastUsers.filter((user) => user.id !== id)))
@@ -30,7 +33,10 @@ function Users() {
     setUserToEdit(user)
   };
 
-  const navigate = useNavigate();
+  const toggleMembership = (identification) => {
+    navigate(`/transactions/${identification}`);
+  }
+
   if (!checkIfUserIsLogged()) navigate('/');
 
   useEffect(() => {
@@ -74,6 +80,9 @@ function Users() {
                   Teléfono
                 </th>
                 <th>
+                  Estado de pago
+                </th>
+                <th>
                   Fotografia
                 </th>
                 <th>
@@ -109,6 +118,9 @@ function Users() {
                           {user.people.mobile}
                         </td>
                         <td>
+                          {user.paymentStatus}
+                        </td>
+                        <td>
                           {user.people.image ? (
                             <img src={user.people.image} alt={user.username} width='250px' />
                           )
@@ -122,10 +134,17 @@ function Users() {
                       <td colSpan={7}></td>
                     )}
                     <td>
+                      <div className="buttons">
+                        <div className="actions">
                         <button onClick={() => toggleModalUpdate(user)} disabled={userLogged && userLogged.id === user.id}>Editar</button>
                         <button onClick={() => toggleDelete(user.id)} disabled={userLogged && userLogged.id === user.id}>Eliminar</button>
                         
-                      
+                        </div>
+                        <div className="membership">
+                        <button onClick={() => toggleMembership(user.people.identification)}>Membresia</button>
+                        </div>
+                      </div>
+
                       
                     </td>
                   </tr>

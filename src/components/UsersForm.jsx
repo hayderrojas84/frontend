@@ -242,18 +242,22 @@ function UsersForm({ setUsers = null, operation = 'Agregar', toggleModal = null,
                 <input
                   type="number"
                   name="weight"
-                  placeholder="Peso"
+                  placeholder="Peso (KG)"
                   onChange={handleInputChange}
                   value={people.weight}
+                  min={30}
+                  max={250}
                 />
               </td>
               <td>
                 <input
                   type="number"
                   name="height"
-                  placeholder="Altura"
+                  placeholder="Altura (CM)"
                   onChange={handleInputChange}
                   value={people.height}
+                  min={100}
+                  max={250}
                 />
               </td>
             </tr>
