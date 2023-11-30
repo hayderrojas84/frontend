@@ -1,0 +1,11 @@
+/* Container styles */
+.container-routines-page {
+  display: grid;
+  row-gap: 3rem;
+  justify-content: center;
+}
+
+.rgap3_center {
+  row-gap: 3rem;
+  justify-content: center;
+}

@@ -1,0 +1,31 @@
+.machines_table {
+  display: flex;
+  max-height: 80vh;
+  width: 75vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.machines_table .dataTable {
+  width: 70vw;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.machines_table .dataTable thead {
+  z-index: -1;
+}
+
+.machines_table .dataTable thead tr th {
+  position: sticky;
+  top: 0;
+}
+
+.machines_table .dataTable tbody tr:hover {
+  background: #e6f7ff;
+}
+
+.machine_image img {
+  max-height: 300px;
+  width: auto;
+}

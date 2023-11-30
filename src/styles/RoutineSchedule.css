@@ -1,0 +1,62 @@
+.routine_schedule_data {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.routine_data {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+.routine_data p {
+  padding: 0;
+  margin: 0;
+}
+
+.routine_description {
+  margin-top: 20px !important;
+  padding: 15px !important;
+  font-size: 20px;
+}
+
+.routine_exercises {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.grid-center {
+  justify-items: center;
+}
+
+.exercise_data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exercise_image img {
+  width: 400px;
+}
+
+.exercise_info span {
+  background-color: aliceblue;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.exercise_info span:hover {
+  cursor: pointer;
+}
+
+.routine_exercise_container{
+  border-top: 1px solid gray;
+}

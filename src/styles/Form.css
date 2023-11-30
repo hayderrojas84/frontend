@@ -1,0 +1,57 @@
+.form-container {
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-container>h2 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.c3_1fr {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.c2_1fr {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.r_1fr {
+  grid-template-rows: 1fr;
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.form {
+  font-size: 16px;
+}
+
+.form input, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form select {
+  width: 90%;
+  padding: 12px;
+}
+
+.submit-button-container {
+  text-align: center;
+}
+

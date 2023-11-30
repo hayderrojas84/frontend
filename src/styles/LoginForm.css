@@ -1,0 +1,95 @@
+.login_container {
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: auto;
+  max-width: 75vh;
+  margin-top: 30vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+} */
+
+/* input {
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
+.signin-button {
+  font-size: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 25px;
+}
+
+.signin-button:hover {
+  background-color: #0056b3;
+}
+
+.create-button {
+  font-size: 20px;
+  background: none;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-button:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+
+.login-box { /* Nueva clase para el marco */
+  border: solid 1px rgb(248, 247, 247);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tableLogin-label {
+  padding-right: 15px;
+}
+
+.login-buttons-group {
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+}

@@ -1,0 +1,133 @@
+.dataTable_container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.table_options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pagination_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+
+.pagination_options .form-field_container {
+  padding-left: 15px;
+}
+
+.dataTable {
+  border: 1px gray solid;
+}
+
+.dataTable table {
+  border-radius: 5px;
+  border-collapse: collapse;
+  background-color: white;
+  color: black;
+  width: 100%;
+  max-width: 100%;
+}
+
+.dataTable table th {
+  background-color: #212529;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.dataTable table th,
+.dataTable table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.pages_information {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px 15px;
+}
+
+.pages_buttons {
+  text-align: center;
+}
+
+.general_table_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.register_button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+
+}
+
+.overflow_table {
+  display: flex;
+  max-height: 80vh;
+  width: 75vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.overflow_table .dataTable {
+  width: 70vw;
+  max-height: 60vh;
+  /* height: 60vh; */
+  overflow: auto;
+}
+
+.overflow_table .dataTable thead {
+  z-index: -1;
+}
+
+.overflow_table .dataTable thead tr th {
+  position: sticky;
+  top: 0;
+}
+
+.overflow_table .dataTable tbody tr:hover {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.font_bold {
+  font-weight: bolder;
+}
+
+.page_button {
+  background-color: #212529;
+  color: white;
+}
+
+.truncated_description {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.datatable_img {
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+.sort_th {
+  cursor: pointer;
+}

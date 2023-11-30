@@ -8,6 +8,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-link {
@@ -23,8 +24,58 @@
   }
 }
 
-.body,html {
+.app {
+  width: 100vw;
+  height: 100vh;
+}
 
-  background-color: black;
-  color: rgb(54, 54, 54)
+.body,html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[disabled], button:disabled {
+  background-color: #a7a7a7;
+  color: black;
+  cursor: default;
 }
