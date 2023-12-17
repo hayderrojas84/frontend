@@ -61,7 +61,7 @@ function DataTable({ data = { content: [], headers: [], total: 1 }, form_actions
           return <td key={`${item.id}_actions`}>{form_actions.map((action) => {
             let { onClick, ...attributes } = action.attributes ? action.attributes : { onClick: null }
             if (onClick) {
-              if (action.name.toLowerCase() === 'eliminar' || action.name.toLowerCase() === 'ver') {
+              if (action.name.toLowerCase() === 'eliminar' || action.name.toLowerCase() === 'ver' || action.name.toLowerCase() === 'mantenimiento') {
                 onClick = () => action.attributes.onClick({ id: item.id });
               }
               if (action.name.toLowerCase() === 'editar') {

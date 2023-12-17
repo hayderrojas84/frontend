@@ -117,6 +117,13 @@ function Machines() {
     });
   };
 
+  const handleMaintenance = ({ id }) => {
+    if (id) {
+      navigate(`/machines/maintenance/${id}`);
+    }
+    
+  }
+
   const formActions = [
     {
       name: 'Editar',
@@ -130,6 +137,13 @@ function Machines() {
       attributes: {
         className: 'delete-button danger',
         onClick: handleDelete
+      }
+    },
+    {
+      name: 'Mantenimiento',
+      attributes: {
+        className: 'info',
+        onClick: handleMaintenance
       }
     }
   ];

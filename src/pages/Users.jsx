@@ -91,7 +91,7 @@ function Users() {
 
 
   const handleMembership = ({ identification }) => {
-    navigate(`/transactions/${identification}`);
+    navigate(`/users/transactions/${identification}`);
   }
 
   const handleDelete = ({ id }) => {
